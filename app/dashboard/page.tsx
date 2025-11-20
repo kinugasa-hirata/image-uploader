@@ -1,9 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useAuth } from '@/contexts/AuthContext';
+import { useAuth } from '../../contexts/AuthContext';
 import { useRouter } from 'next/navigation';
-import { storage, databases, STORAGE_BUCKET_ID, DATABASE_ID, UPLOADS_COLLECTION_ID } from '@/lib/appwrite';
+import { storage, databases, STORAGE_BUCKET_ID, DATABASE_ID, UPLOADS_COLLECTION_ID } from '../../lib/appwrite';
 import { ID } from 'appwrite';
 
 interface Upload {
